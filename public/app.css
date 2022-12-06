@@ -1,0 +1,33 @@
+.option-enter {
+  opacity: 0;
+}
+.option-exit {
+  opacity: 1;
+}
+.option-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.option-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 500ms;
+}
+.alert-exit {
+  opacity: 1;
+
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: opacity 300ms, transform 500ms;
+}
